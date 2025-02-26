@@ -4,6 +4,7 @@
 This repository is a collection of my solutions to various LeetCode problems. It includes my thought process, code implementations, and analyses for each problem. The goal is to document my learning journey and provide a resource for others looking to understand different algorithmic challenges.
 
 ## Repository Structure
+(Under progress)
 - **Easy/**: Solutions for problems categorized as Easy.
 - **Medium/**: Solutions for problems categorized as Medium.
 - **Hard/**: Solutions for problems categorized as Hard.
