@@ -1,6 +1,6 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        merged_str = ''
+        merged_str = ""
         i = 0
         for i in range(max(len(word1), len(word2))):
             if i < len(word1):
