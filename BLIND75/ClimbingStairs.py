@@ -10,6 +10,9 @@ class Solution(object):
         # I used a bottom-up approach to build the solution iteratively
         # Space optimization by only keeping track of the last two computed values
 
+        # Bottom up(tabulaton) approach with space optimization
+        # Another way of dp is Top down (Memoization)
+
         if n == 1:
             return 1
         if n == 2:
