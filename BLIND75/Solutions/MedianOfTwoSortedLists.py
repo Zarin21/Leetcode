@@ -5,31 +5,61 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
-        A, B = nums1, nums2
-        total = len(nums1) + len(nums2)
+        A = nums1
+        B = nums2
+        total = len(A) + len(B)
         half = total // 2
 
         if len(B) < len(A):
             A, B = B, A
 
-        l, r = 0, len(A) - 1
+        # Running Binary Search on A
+        l = 0
+        r = len(A) - 1
+
         while True:
-            i = (l + r) // 2  # A
-            j = half - i - 2  # B
+            i = (l + r) // 2  # (Floor Division); Potential Median index for A
+            j = (
+                half - i - 2
+            )  # Potential Median index for B; -2 because i includes 0 and B also includes 0 index
 
-            Aleft = A[i] if i >= 0 else float("-infinity")
-            Aright = A[i + 1] if (i + 1) < len(A) else float("infinity")
-            Bleft = B[j] if j >= 0 else float("-infinity")
-            Bright = B[j + 1] if (j + 1) < len(B) else float("infinity")
+            # A
+            if i >= 0:
+                ALeft = A[i]
+            else:
+                ALeft = float("-infinity")
+            if i < len(A) - 1:
+                ARight = A[i + 1]
+            else:
+                ARight = float("infinity")
 
-            # partition is correct
-            if Aleft <= Bright and Bleft <= Aright:
+            # B
+            if j >= 0:
+                BLeft = B[j]
+            else:
+                BLeft = float("-infinity")
+            if j < len(B) - 1:
+                BRight = B[j + 1]
+            else:
+                BRight = float("infinity")
+
+            # Left Partition is correct
+            if ALeft <= BRight and ARight >= BLeft:
                 # odd
                 if total % 2:
-                    return min(Aright, Bright)
+                    return min(ARight, BRight)
                 # even
-                return (max(Aleft, Bleft) + min(Aright, Bright)) / 2
-            elif Aleft > Bright:
-                r = i - 1
-            else:
-                l = i + 1
+                return (max(ALeft, BLeft) + min(ARight, BRight)) / 2.0
+            # Partition not correct
+            elif ALeft > BLeft:  # A has more item than it should have on the left
+                # So we shift the pointer
+                r = (
+                    i - 1
+                )  # Potential Median shifted to left eliminating items from left
+            elif ARight < BRight:  # A has less items on the left than it should have
+                l = (
+                    i + 1
+                )  # Potential Median shifted to right to have more items on the left, increasing left partition
+
+        # Time Complexity: O(log(min(n, m))) where n and m are the lengths of the two arrays.
+        # Space Complexity: O(1)
