@@ -5,6 +5,7 @@ This repository is a collection of my solutions to various LeetCode problems. It
 
 ## Repository Structure
 (Under progress)
+Also has a folder for BLIND75 Problems
 - **Easy/**: Solutions for problems categorized as Easy.
 - **Medium/**: Solutions for problems categorized as Medium.
 - **Hard/**: Solutions for problems categorized as Hard.
