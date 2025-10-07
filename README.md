@@ -4,13 +4,13 @@
 This repository is a collection of my solutions to various LeetCode problems. It includes my thought process, code implementations, and analyses for each problem. The goal is to document my learning journey and provide a resource for others looking to understand different algorithmic challenges.
 
 ## Repository Structure
-(Under progress)
-Also has a folder for BLIND75 Problems
 - **Easy/**: Solutions for problems categorized as Easy.
 - **Medium/**: Solutions for problems categorized as Medium.
 - **Hard/**: Solutions for problems categorized as Hard.
 - **Notes/**: Additional notes, tips, and explanations on algorithms and problem-solving strategies.
-- **README.md**: This file, providing an overview of the repository and guidance on its use.
+(Under progress)
+Also has a folder for BLIND75 Problems
+**README.md**: This file, providing an overview of the repository and guidance on its use.
 
 ## How to Navigate
 Each problem folder generally contains:
