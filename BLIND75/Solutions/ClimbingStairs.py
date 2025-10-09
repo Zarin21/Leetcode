@@ -6,7 +6,14 @@ class Solution(object):
         """
         # Using dynamic programming to find the number of distinct ways to climb to the top
         # The number of ways to reach the nth step is the sum of the ways to reach
+        # the (n-1)th step and the (n-2)th step because from those steps you can take
+        # either 1 step or 2 steps to reach the nth step.
+        # This is similar to the Fibonacci sequence where each number is the sum of
         # the (n-1)th step and the (n-2)th step
+        # Recurrence relation: dp[n] = dp[n-1] + dp[n-2]
+        # Base cases: dp[1] = 1, dp[2] = 2
+        # dp array to store the number of ways to reach each step
+
         # I used a bottom-up approach to build the solution iteratively
         # Space optimization by only keeping track of the last two computed values
 

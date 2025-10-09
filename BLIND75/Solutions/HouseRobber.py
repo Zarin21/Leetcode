@@ -6,7 +6,7 @@ class Solution(object):
         """
 
         # Using dynamic programming to find the maximum amount of money that can be stolen
-        # At each house, decide whether to rob it or not based on the maximum amount that
+        # At each house, decide whether to rob it or not based on the maximum amount that can be stolen from previous houses
 
         # I tracked upto the previous house and the house before that
         # The decision is made by comparing the amount that can be stolen by robbing the current
