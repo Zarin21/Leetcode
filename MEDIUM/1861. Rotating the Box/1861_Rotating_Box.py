@@ -9,7 +9,6 @@ class Solution(object):
         # Then, rotating the box 90 degrees clockwise by placing elements in their new positions in a new grid
         # The new position for an element at (i, j) in the original grid will be (j, m-1-i) in the new grid where m is the number of rows in the original grid
         # Creating a new grid to store the rotated box
-
         new_grid_box = [[""] * len(boxGrid) for _ in range(len(boxGrid[0]))]
 
         for i in range(len(boxGrid)):  # Row
