@@ -59,3 +59,6 @@ class Solution:
                 break
                 
         return pawns
+    
+# Time Complexity: O(1), since the board size is fixed (8x8).
+# Space Complexity: O(1), as we are using a constant amount of extra space.
