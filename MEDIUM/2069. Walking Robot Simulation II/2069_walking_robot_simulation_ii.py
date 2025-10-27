@@ -5,6 +5,10 @@ class Robot(object):
         :type width: int
         :type height: int
         """
+        # I initialize the robot's position at (0, 0) and set its initial direction to "East".
+        # I also precompute the sequence of moves that the robot will make along the perimeter
+        # of the rectangle to optimize the step function.
+        # The robot's movement is constrained to the perimeter of the rectangle, so I create a list 
         self.width = width
         self.height = height
         self.dx_dy = [(1, 0), (0, 1), (-1, 0), (0, -1)]
@@ -30,6 +34,11 @@ class Robot(object):
         :type num: int
         :rtype: None
         """
+        # Here, I move the robot along the perimeter of the rectangle
+        # according to the number of steps specified by 'num'.
+        # I update the robot's position and direction based on its current location
+        # and the precomputed perimeter moves.
+
         if self.width == 1 or self.height == 1:
             return
 
@@ -56,12 +65,14 @@ class Robot(object):
         """
         :rtype: List[int]
         """
+        # I return the current position of the robot as a list [x, y].
         return [self.x, self.y]
 
     def getDir(self):
         """
         :rtype: str
         """
+        # I return the current direction of the robot as a string.
         return self.dir_names[self.dir_idx]
 
 
