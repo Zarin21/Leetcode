@@ -22,5 +22,5 @@ Each problem folder generally contains:
 To start exploring the solutions:
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/leetcode-solutions.git
-   cd leetcode-solutions
+   git clone https://github.com/Zarin21/Leetcode.git
+   cd Leetcode
