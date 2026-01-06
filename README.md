@@ -24,3 +24,5 @@ To start exploring the solutions:
    ```sh
    git clone https://github.com/Zarin21/Leetcode.git
    cd Leetcode
+
+Then you can check out any category problems (Easy, Medium or Hard; or Blind75)
