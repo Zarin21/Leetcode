@@ -7,7 +7,7 @@ This repository is a collection of my solutions to various LeetCode problems. It
 - **Easy/**: Solutions for problems categorized as Easy.
 - **Medium/**: Solutions for problems categorized as Medium.
 - **Hard/**: Solutions for problems categorized as Hard.
-- **Notes/**: Additional notes, tips, and explanations on algorithms and problem-solving strategies.
+- **Notes/**: Additional notes, tips, and explanations on algorithms and problem-solving strategies. Also includes time and space complexity of each problem under the solution.
 (Under progress)
 Also has a folder for BLIND75 Problems; currently unfinished and focusing on Neetcode 150 (there's no specific folder for it)
 **README.md**: This file, providing an overview of the repository and guidance on its use.
